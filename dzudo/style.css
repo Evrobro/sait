@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+font-family: 'Raleway', sans-serif;
+}
+.logo{
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.graficlogo{
+    padding: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+nav{
+    margin: auto;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+}
+.topnav{
+    background-color: white;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.topnav a{
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 15px;
+}
+.topnav a:hover{
+border-bottom: 2px solid #000000;
+}
+.topnav.icon{
+    display: none;
+}
+
+@media  screen and(max-width:1024px ) {
+    .topnav a:not(:first-child){
+        display: none;
+    }
+    .topnav a.icon{
+        float:right;
+        margin-top: -17px;
+        display:block;
+        color: black;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+    }
+    .topnav.responsive{
+        position: relative;
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+
+
+
+
+
+
+
+
+.slider {
+    position: relative;
+    width: 680px;
+    margin: 50px auto;
+    margin-top: 10px;
+    box-shadow:rgba(0, 0, 0, 0.75);
+}
+
+.slider input[name="switch"] {
+    display: none;
+}
+
+.switch {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    text-align: center;
+    width: 100%;
+}
+
+.switch label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin: 0 3px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+    border-radius: 50%;
+    border: 5px solid #2f363c;
+    background-color: #738290;
+}
+
+#btn1:checked~.switch label[for="btn1"] {
+    background-color: white;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+    background-color: white;
+}
+
+#btn3:checked~.switch label[for="btn3"] {
+    background-color: white;
+}
+
+.slider-inner {
+    overflow: hidden;
+}
+
+.slides {
+    width: 300%;
+    transition: all 0.5s;
+}
+
+.slides img {
+    width: 680px;
+    height: 340px;
+    float: left;
+}
+
+#btn1:checked~slider-inner slides {
+    transform: translate(0);
+}
+
+#btn2:checked~.slider-inner .slides {
+    transform: translate(-680px);
+}
+
+#btn3:checked~.slider-inner .slides {
+    transform: translate(-1360px);
+}
+.opis{
+    margin-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+
+}
+.people{
+margin-left: 420px;
+}
+.podval{
+    margin-left: 500px;
+    padding-top: 50px;
+    color: white;
+}
+#thumbs { padding-top: 10px; overflow: hidden; }
+#thumbs img, #largeImage {
+    border: 1px solid gray;
+    padding: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+#thumbs img {
+    float: left;
+    margin-right: 6px;
+}
+#description {
+    background: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+    width: 525px;
+    margin: 5px;
+}
+#panel { position: relative; }
+
+.galleryimg{
+    padding-left: 490px;
+    text-align: center;
+    width: 900px;
+}
+.galleryvstal{
+   margin-left: 420px;
+    text-align: center;
+    width: 900px;
+}
+
+
+
+
+
+* {box-sizing: border-box;}
+
+.product-wrap {
+    width: 300px;
+    margin: 0 auto;
+    background: white;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Lora;
+    text-transform: uppercase;
+}
+.blockm{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.product-item {
+    position: relative;
+    overflow: hidden;
+}
+.product-wrap img {
+    display: block;
+    width: 100%;
+
+}
+.product-buttons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.button {
+    text-decoration: none;
+    color: #c0a97a;
+    font-size: 12px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #c0a97a;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s ease-in-out;
+}
+.button:before {
+    /*content: "\f07a";*/
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
+.product-item:hover .product-buttons {opacity: 1;}
+.product-item:hover .button {transform: translate(-50%, -50%) scale(1);}
+.button:hover {background: black;}
+.product-title {color: #5e5e5e;}
+.product-title a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-weight: 600;
+    margin: 15px 0 5px;
+    padding-bottom: 7px;
+    display: block;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.product-title a:after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #2e2e2e;
+    left: 50%;
+    margin-left: -20px;
+    bottom: 0;
+    transition: .3s ease-in-out;
+}
+.product-title a:hover {color: #c0a97a;}
+.product-title:hover a:after {background: #c0a97a;}
+.product-price {
+    font-size: 20px;
+    color: #c0a97a;
+    font-weight: 700;
+
+}
+
+.logo{
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

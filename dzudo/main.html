@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+        body{
+            /*background-image: url("image/main5.jpg");*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: top;*/
+            /*background-size: 50%;*/
+            background-color:whitesmoke;
+            height: 2000px;
+            
+        }
+
+        h1 {
+            font-weight: normal; /* Нормальное начертание */
+        }
+        .select {
+            color: #005c97; /* Цвет текста */
+            font-weight: 600; /* Жирное начертание */
+        }
+        #footer {
+           position: center;
+            height: 150px;
+            background: black; /* Цвет фона */
+            color: #fff; /* Цвет текста */
+            width: 100%; /* Ширина слоя */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+<a href="main.html"><img class="graficlogo" src="image/logo.jpg" height="260"></a>
+    </div>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="main.html">HOME</a>
+            <a href="tour.html">TOURNAMENT</a>
+            <a href="contact.html">СONTACT</a>
+            <a href="about us.html">ABOUT US</a>
+            <a href="gallery.html">GALLERY</a>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">&#9667;</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B7%D1%8E%D0%B4%D0%BE">История Дзюдо</a>
+                    <a href="magazin.html">товары</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+
+<div class="slider">
+    <input type="radio" name="switch" id="btn1" checked>
+    <input type="radio" name="switch" id="btn2">
+    <input type="radio" name="switch" id="btn3">
+
+    <div class="switch">
+        <label for="btn1"></label>
+        <label for="btn2"></label>
+        <label for="btn3"></label>
+    </div>
+
+    <div class="slider-inner">
+        <div class="slides">
+            <img src="image/VVput.jpg" width="680" height="340"/>
+            <img src="image/orut.jpg" width="680" height="340"/>
+            <iframe width="680" height="340" src="https://www.youtube.com/embed/pQJrgIOplFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+    </div>
+
+
+</div>
+<script src="js.js"></script>
+
+<div class="opis">
+    <h1>Что такое Дзюдо?</h1>
+    <br>
+    <P class="blocktext">Дзюдо – это современное боевое искусство, зародившееся в Японии в позапрошлом веке, и взявшее в основу философию древнейших боевых учений. Так прародителем современного дзюдо стало единоборство дзюдзюцу или привычное джиу-джицу. Дзигоро Кано – основатель дзюдо, взял лучшее из школы джиу-джицу, а именно - основной постулат «быть мягким и податливым, направляя силу врага против него самого» и возвел его в философию. В переводе с японского дзюдо означает «Мягкий путь».
+<h1>Основание школы Дзюдо</h1>
+    <br>
+    <P class="blocktext">Датой основания дзюдо как отдельной школы боевого искусства считается 1882 год. С этого момента Дзигоро Кано устремил всю свою деятельность на развитие нового направления классических боевых искусств - без жестокости, присущей джиу-джицу, и основанное на самоконтроле и уважении к сопернику. Дзигоро Кано ввел своеобразный моральный кодекс для дзюдоиста, основными компонентами которого являются честь, храбрость, самоконтроль. Так, спортсмены перед выходом на татами и после боя делают поклон своему противнику – жест дружбы и уважения.</P>
+    <br>
+    <h1>Философия боя</h1>
+    <P class="blocktext">В основе дзюдо лежит самоконтроль. Дзюдо основано не столько на физической силе, сколько на силе духа. Это ловкость и умение выбрать удачный момент для броска. Дзюдоисты не идут в схватку с агрессией, даже само понятие «спортивная злость» здесь неуместно. Философия боя в том, чтобы контролировать свою силу, пока не наступит решающий момент. «Обдумывай тщательно – действуй решительно», завещал своим последователям Дзигоро Кано. Схватка дзюдоистов – это броски, захваты и болевые приемы. Удары в дзюдо не наносятся, и только силы будет не достаточно, чтобы выиграть бой.</P>
+</div>
+
+<div class="people">
+    <img src="image/judok.jpg"
+         width="680" height="420" alt="просто едут">
+</div>
+<br>
+<div id="footer">
+    <p>
+
+        <br>
+        <br>
+    <p>* Моб.тел: 8-961-654-25-04
+        <br>
+    <br>
+        * Электронная почта: Djudoass.com
+        <br>
+    <br>
+        * Сайт магазина: Djudoassociation.com</p>
+</div>
+
+</body>
+</html>
